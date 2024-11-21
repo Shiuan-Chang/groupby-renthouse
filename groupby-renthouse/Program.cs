@@ -13,26 +13,26 @@ namespace groupby_renthouse
             Console.OutputEncoding = Encoding.UTF8;
             var properties = new List<RentalProperty>
             {
-                new RentalProperty { Location = "大安區", Type = "整層住家", Rent = 15000, Layout = 2, IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "大安區", Type = "分租套房", Rent = 8000, Layout = 1, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "信義區", Type = "獨立套房", Rent = 20000, Layout = 2, IsNew = true, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "信義區", Type = "雅房", Rent = 6000, Layout = 1, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "內湖區", Type = "整層住家", Rent = 25000, Layout = 3, IsNew = true, NearMRT = true, PetAllowed = true, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "內湖區", Type = "分租套房", Rent = 9000, Layout = 1, IsNew = false, NearMRT = true, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = false },
-                new RentalProperty { Location = "士林區", Type = "獨立套房", Rent = 12000, Layout = 2, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "士林區", Type = "車位", Rent = 3000, Layout = 0, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false },
-                new RentalProperty { Location = "文山區", Type = "雅房", Rent = 7000, Layout = 1, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "松山區", Type = "整層住家", Rent = 18000, Layout = 2, IsNew = true, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "萬華區", Type = "分租套房", Rent = 8500, Layout = 1, IsNew = false, NearMRT = true, PetAllowed = false, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "中山區", Type = "獨立套房", Rent = 13000, Layout = 2, IsNew = false, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "北投區", Type = "雅房", Rent = 5000, Layout = 1, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "中正區", Type = "整層住家", Rent = 22000, Layout = 3, IsNew = true, NearMRT = true, PetAllowed = true, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "大同區", Type = "車位", Rent = 4000, Layout = 0, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false },
-                new RentalProperty { Location = "大安區", Type = "雅房", Rent = 7500, Layout = 1, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "信義區", Type = "整層住家", Rent = 35000, Layout = 4, IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "內湖區", Type = "分租套房", Rent = 10000, Layout = 2, IsNew = false, NearMRT = false, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
-                new RentalProperty { Location = "士林區", Type = "獨立套房", Rent = 16000, Layout = 3, IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
-                new RentalProperty { Location = "文山區", Type = "車位", Rent = 5000, Layout = 0, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false }
+                new RentalProperty { Location = "大安區", Type = "整層住家", Rent = 15000, Layout = 2, roomNums = 2, floor = 2,IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "大安區", Type = "分租套房", Rent = 8000, Layout = 1, roomNums = 3,floor = 1, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "信義區", Type = "獨立套房", Rent = 20000, Layout = 2, roomNums = 2,floor = 3,IsNew = true, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "信義區", Type = "雅房", Rent = 6000, Layout = 1, roomNums = 4,floor = 2,IsNew = false, NearMRT = false, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "內湖區", Type = "整層住家", Rent = 25000, Layout = 3, roomNums = 3, floor = 2,IsNew = true, NearMRT = true, PetAllowed = true, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "內湖區", Type = "分租套房", Rent = 9000, Layout = 1, roomNums = 2,floor = 4,IsNew = false, NearMRT = true, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = false },
+                new RentalProperty { Location = "士林區", Type = "獨立套房", Rent = 12000, Layout = 2, roomNums = 4,floor = 2,IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "士林區", Type = "車位", Rent = 3000, Layout = 0, roomNums = 1,floor = 1, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false },
+                new RentalProperty { Location = "文山區", Type = "雅房", Rent = 7000, Layout = 1, roomNums = 2,floor = 2, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "松山區", Type = "整層住家", Rent = 18000, Layout = 2, roomNums = 2,floor = 1,IsNew = true, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "萬華區", Type = "分租套房", Rent = 8500, Layout = 1, roomNums = 1,floor = 2,IsNew = false, NearMRT = true, PetAllowed = false, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "中山區", Type = "獨立套房", Rent = 13000, Layout = 2, roomNums = 5,floor = 3,IsNew = false, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "北投區", Type = "雅房", Rent = 5000, Layout = 1,roomNums = 3, floor = 2, IsNew = false, NearMRT = false, PetAllowed = false, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "中正區", Type = "整層住家", Rent = 22000, Layout = 3, roomNums = 6,floor = 4,IsNew = true, NearMRT = true, PetAllowed = true, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "大同區", Type = "車位", Rent = 4000, Layout = 0, roomNums = 0,floor = 1,IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false },
+                new RentalProperty { Location = "大安區", Type = "雅房", Rent = 7500, Layout = 1, roomNums = 2,floor = 2, IsNew = false, NearMRT = true, PetAllowed = true, HasParking = false, HasElevator = false, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "信義區", Type = "整層住家", Rent = 35000, Layout = 4, roomNums = 8,floor = 2,IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "內湖區", Type = "分租套房", Rent = 10000, Layout = 2, roomNums = 2,floor = 2, IsNew = false, NearMRT = false, PetAllowed = true, HasParking = false, HasElevator = true, HasBalcony = false, ShortTermRental = true },
+                new RentalProperty { Location = "士林區", Type = "獨立套房", Rent = 16000, Layout = 3,roomNums = 3, IsNew = true, NearMRT = true, PetAllowed = false, HasParking = true, HasElevator = true, HasBalcony = true, ShortTermRental = false },
+                new RentalProperty { Location = "文山區", Type = "車位", Rent = 5000, Layout = 0,roomNums = 1, floor = 1,IsNew = false, NearMRT = false, PetAllowed = false, HasParking = true, HasElevator = false, HasBalcony = false, ShortTermRental = false }
             };
 
 
@@ -188,41 +188,79 @@ namespace groupby_renthouse
             //根據 Location 分組，計算每個地區中符合條件的物件總數，並選出租金最高的物件，顯示其 Location、Type 和 Rent。
 
 
-            var Datas10 = properties.Where(x => x.Rent > 25000 && (x.Location == "大安區" || x.Location == "松山區" || x.Location == "內湖區") && x.HasElevator && x.HasBalcony)
-            .GroupBy(x => x.Location)
-            .Select(x => new
-            {
-                Location = x.Key,
-                Count = x.Count(),
-                HighestRent = x.OrderByDescending(y => y.Rent).First()
-            }).ToList();
+            //var Datas10 = properties.Where(x => x.Rent > 25000 && (x.Location == "大安區" || x.Location == "松山區" || x.Location == "內湖區") && x.HasElevator && x.HasBalcony)
+            //.GroupBy(x => x.Location)
+            //.Select(x => new
+            //{
+            //    Location = x.Key,
+            //    Count = x.Count(),
+            //    HighestRent = x.OrderByDescending(y => y.Rent).First()
+            //}).ToList();
 
-            foreach (var data in Datas10)
-            {
-                Console.WriteLine($"Location: {data.Location}, Highest Rent Type: {data.HighestRent.Type}, Rent: {data.HighestRent.Rent}");
-            }
+            //foreach (var data in Datas10)
+            //{
+            //    Console.WriteLine($"Location: {data.Location}, Highest Rent Type: {data.HighestRent.Type}, Rent: {data.HighestRent.Rent}");
+            //}
 
 
 
             //題目 1
             //問題：篩選租金在 10000 到 30000 之間，並且允許養寵物的房屋。請依照「位置」和「房間數」分組，統計每組資料的平均租金是多少。
 
+            //var Datas11 = properties.Where(x=> x.Rent >= 10000 && x.Rent <= 300000 && x.PetAllowed).GroupBy(x=> new { x.Location, x.roomNums }).Select(x => new
+            //{
+            //    Group = x.Key,
+            //    AverageRent = x.Average(y=> y.Rent),
+            //}).OrderBy(x => x.Group.roomNums).ToList();
 
+            //foreach(var data in Datas11) 
+            //{
+            //    Console.WriteLine($"Location: {data.Group}, Highest Rent Type: {data.AverageRent}");
+            //}
 
 
 
             //題目 2
             //問題：找出每個「位置」中房租平均在 15000 以上且有陽台的「整層住家」，並依「樓層數」分組，計算每組的平均房租。
 
+            //var Datas12 = properties.Where(x=>x.HasBalcony &&x.Type == "整層住家").GroupBy(x=> new { x.Location }).Where(y=>y.Average(x=>x.Rent) > 15000)
+            //    .SelectMany(y=>y.GroupBy(x=>x.Layout).Select(subGroup => new
+            //    {
+            //        Location = y.Key,      
+            //        Layout = subGroup.Key,    
+            //        AverageRent = subGroup.Average(property => property.Rent) 
+            //    })).ToList();
 
-
-
+            //foreach (var data in Datas12) 
+            //{
+            //    Console.WriteLine($"Location: {data.Location},Layout: {data.Layout}, Average Rent: {data.AverageRent}");
+            //}
 
 
             //題目 3
             //問題：統計各個「位置」中不同「類型」的房源平均房間數（Rooms）。只包含房租超過 10000 且位於 1 樓以上的資料。
 
+            var Datas13 = properties.Where(x=>x.Rent > 10000 && x.floor > 1).GroupBy(x=>new { x.Location })
+                .Select(locationGroup => new
+                {
+                    Location = locationGroup.Key,
+                    Averages = locationGroup
+                    .GroupBy(y => y.Type) 
+                    .Select(typeGroup => new
+                    {
+                        Type = typeGroup.Key,
+                        AverageRooms = typeGroup.Average(y => y.roomNums) 
+                })}).ToList();
 
+            foreach (var data in Datas13)
+            {
+                Console.WriteLine($"Location: {data.Location}");
+
+                foreach (var avg in data.Averages)
+                {
+                    Console.WriteLine($"  Type: {avg.Type}, Average Rooms: {avg.AverageRooms}");
+                }
+            }
 
 
             //題目 4

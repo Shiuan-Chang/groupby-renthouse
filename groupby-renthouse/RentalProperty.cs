@@ -12,6 +12,10 @@ namespace groupby_renthouse
         public string Type { get; set; }
         public int Rent { get; set; }
         public int Layout { get; set; }
+
+        public int roomNums {  get; set; }
+
+        public int floor {  get; set; }
         public bool IsNew { get; set; }
         public bool NearMRT { get; set; }
         public bool PetAllowed { get; set; }
@@ -22,7 +26,7 @@ namespace groupby_renthouse
 
         public override string ToString()
         {
-            return $"Location: {Location}, Type: {Type}, Rent: {Rent}元, Layout: {Layout}房, " +
+            return $"Location: {Location}, Type: {Type}, Rent: {Rent}元, Layout: {Layout}房, floor: {floor}, roomNums:{roomNums} " +
                    $"IsNew: {IsNew}, NearMRT: {NearMRT}, PetAllowed: {PetAllowed}, HasParking: {HasParking}, " +
                    $"HasElevator: {HasElevator}, HasBalcony: {HasBalcony}, ShortTermRental: {ShortTermRental}";
         }
